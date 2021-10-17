@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sun Oct 17 20:46:04 2021
+
 
 @author: khare
 """
@@ -61,7 +61,7 @@ ip_reviews_words = Nvidia.split(" ")
 
 
 
-with open("C:/Users/khare/Downloads/TextminningNLP/Datasets NLP\stop.txt","r") as sw:
+with open("\stop.txt","r") as sw:
     stop_words = sw.read()
     
 stop_words = stop_words.split("\n")
@@ -90,7 +90,7 @@ plt.figure(1)
 plt.imshow(wordcloud_ip)
 
 # positive words # Choose the path for +ve words stored in system
-with open("C:/Users/khare/Downloads/TextminningNLP\positive-words.txt","r") as pos:
+with open("\positive-words.txt","r") as pos:
   poswords = pos.read().split("\n")
 
 
@@ -109,7 +109,7 @@ plt.title("Positive Analysis WordCloud of Nvidia 1050Ti Reviews  ");plt.imshow(w
 
 
 # negative words Choose path for -ve words stored in system
-with open("C:/Users/khare/Downloads/TextminningNLP/Datasets NLP\positive-words.txt","r") as neg:
+with open("\positive-words.txt","r") as neg:
   negwords = neg.read().split("\n")
 # negative word cloud
 # Choosing the only words which are present in negwords
